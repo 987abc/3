@@ -1,0 +1,67 @@
+cd
+Change Directory
+
+pwd
+Print Working directory
+
+mkdir
+Make directory (Folder)
+
+rmdir
+Remove/Delete Directory (Directory has to be empty)
+
+ls
+List files
+options 
+-l
+See owner, permissions available, size, created time and date
+-a
+Hidden files are also shown
+
+* something
+* can be used as a wildcard like /direc/* means all files inside * directory
+
+rm
+Remove/delete file. **Does not move to recycle bin**
+-r
+Delete folder and its contents
+-f
+Force deletes files.
+imp** rm -rf /somedir/* will remove all files and folders inside the folder but not /somedir
+
+cp
+Copy files with pattern ** does not copy folder.
+to copy folder use -r option
+cp sourcedir destinationdir
+-r
+copies all files within the folder
+-f 
+forces copy
+
+mv
+Move files. Does move folders without -r option
+mv source destinnation
+
+cat
+Dumps file contents onto terminal screen
+
+tac
+Dumps file contents in flipped form
+
+tail
+Prints last lines if -n option is given. else works like cat
+-n
+use -n option to give number of lines you want to print from last. 
+
+head
+Similar to tail
+if -n not given then works like cat
+
+less
+less is a text viewer. you can view files with it. you can also pipe your output to it like the following
+
+more
+More is similar to less. It shows one screen at a time. if file is smaller then more works like cat. if file is large then more goes through entire file with pageup pagedown or arrow keys. Exits when file is finished
+
+touch
+It creates empty file
