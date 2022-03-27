@@ -1,0 +1,33 @@
+lsa installation partition (30gb)
+/ - 20000 (primary)
+/boot - 500
+swap - 6000
+/home - (remaining)
+
+install desktop
+
+
+
+ifconfig
+
+mkdir /home/nfs
+
+touch /home/nfs/f1
+
+chmod -R 777 /home/nfs
+
+vi /etc/exports
+
+{ press Insert type /home/nfs *(rw,sync) press Esc type :wq press Enter. }
+
+service iptables stop
+
+service nfs start
+
+{ open new terminal }
+
+mkdir /home/data
+
+mount -t nfs 127.0.0.1:home/nfs /home/data
+
+ls /home/data
